@@ -163,6 +163,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         Spatie\Analytics\AnalyticsServiceProvider::class,
+        //Spatie\LaravelAnalytics\LaravelAnalyticsServiceProvider::class,
 
         //Irazasyed\LaravelGAMP\LaravelGAMPServiceProvider::class,
 
@@ -235,6 +236,8 @@ return [
 
 
         'Analytics' => Spatie\Analytics\AnalyticsFacade::class,
+
+        //'Analytics' => Spatie\LaravelAnalytics\LaravelAnalyticsFacade::class,
 
     ],
 
