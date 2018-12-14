@@ -162,6 +162,12 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+        Spatie\Analytics\AnalyticsServiceProvider::class,
+
+        //Irazasyed\LaravelGAMP\LaravelGAMPServiceProvider::class,
+
+
+
         /*
          * Package Service Providers...
          */
@@ -223,6 +229,12 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        //'GAMP'  => Irazasyed\LaravelGAMP\Facades\GAMP::class,
+
+
+
+        'Analytics' => Spatie\Analytics\AnalyticsFacade::class,
 
     ],
 
