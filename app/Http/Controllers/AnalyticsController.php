@@ -17,9 +17,10 @@ class AnalyticsController extends Controller
     {
         $analyticsData = Analytics::fetchVisitorsAndPageViews(Period::days(7));
         //dd($analyticsData);
+        //echo($analyticsData);
 
         $browserData = Analytics::fetchTopBrowsers(Period::days(7));
-        echo($browserData);
+        print_r($browserData);
     }
 
     /**
