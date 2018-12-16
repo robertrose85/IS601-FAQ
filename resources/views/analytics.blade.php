@@ -1,4 +1,4 @@
-
+<html>
 
 <table>
     <tr>
@@ -18,10 +18,14 @@ $browserData = Analytics::fetchTopBrowsers(Period::days(7));
 
 foreach ($browserData as $browser)
 {
-?>
-<tr>
-    <td><?php echo $browser['browser']; ?></td>
-    <td><?php echo $browser['sessions']; ?></td>
-</tr>
-<?php
+
+    echo"<tr>";
+    echo "<td>" . $browser['browser'] . "</td>";
+    echo "<td>" . $browser['sessions'] . "</td>";
+
+    echo "</tr>";
+
 }
+?>
+
+</html>
