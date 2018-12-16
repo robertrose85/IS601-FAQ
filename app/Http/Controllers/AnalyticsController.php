@@ -15,12 +15,21 @@ class AnalyticsController extends Controller
      */
     public function index()
     {
-        $analyticsData = Analytics::fetchVisitorsAndPageViews(Period::days(7));
+
+        //$analyticsData = Analytics::fetchVisitorsAndPageViews(Period::days(7));
         //dd($analyticsData);
         //echo($analyticsData);
 
-        $browserData = Analytics::fetchTopBrowsers(Period::days(7));
-        print_r($browserData);
+
+        //$browserData = Analytics::fetchTopBrowsers(Period::days(7));
+        //print_r($browserData);
+
+
+
+
+
+
+
     }
 
     /**
