@@ -1,31 +1,23 @@
-<html>
+@extends('layouts.app')
 
-<table>
-    <tr>
-        <th>Browser</th>
-        <th>Sessions</th>
-    </tr>
-</table>
+@section('content')
+    <h1>Page Views By Browser</h1>
+    <table class="table table-striped table-hover table-reflow">
+        <tr>
+            <th>Browser</th>
+            <th>Sessions</th>
+        </tr>
 
-<?php
-$analyticsData = Analytics::fetchVisitorsAndPageViews(Period::days(7));
-//dd($analyticsData);
-//echo($analyticsData);
+        @foreach($browser as $arr)
+            <tr>
+                <td> {{ $arr['browser'] }}</td>
+                <td> {{ $arr['sessions'] }}</td>
+            </tr>
+        @endforeach
 
 
-$browserData = Analytics::fetchTopBrowsers(Period::days(7));
-//print_r($browserData);
+    </table>
+@stop
 
-foreach ($browserData as $browser)
-{
 
-    echo"<tr>";
-    echo "<td>" . $browser['browser'] . "</td>";
-    echo "<td>" . $browser['sessions'] . "</td>";
 
-    echo "</tr>";
-
-}
-?>
-
-</html>

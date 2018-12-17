@@ -16,18 +16,16 @@ class AnalyticsController extends Controller
     public function index()
     {
 
-        //$analyticsData = Analytics::fetchVisitorsAndPageViews(Period::days(7));
+        $analyticsData = Analytics::fetchVisitorsAndPageViews(Period::days(7));
         //dd($analyticsData);
         //echo($analyticsData);
 
-
-        //$browserData = Analytics::fetchTopBrowsers(Period::days(7));
+        $browserInfo = Analytics::fetchTopBrowsers(Period::days(7));
+        $browserData = json_decode($browserInfo, true);
         //print_r($browserData);
 
 
-
-
-
+        return view('analytics', ['browser' => $browserData]);
 
 
     }
