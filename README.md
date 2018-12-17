@@ -17,13 +17,9 @@
 
 ###### Have Google Analytics track web traffic and leverage API for reporting.
 
+#####Stories:
 
-Progress: <br>
-Created branch<br>
-installed relevant packages<br>
-inserted tracking code.
-
-Current Issues
-1. Data displaying in a friendly UI
-2. Tracking offline (may require dummy data)
-3. Masking API keys in GitHub 
+1. As a web admin, I would like to track the page views via google analytics, so that I have analytic data regarding my traffic.
+2. As a web admin and Dev, I would like to collect browser information of my users, so that I can better understand how to tailor my page.
+3. As a web dev, I would like to hook into the Google Analytics API and collect data on my page.
+4. As a web dev, I would like to display live data from the google API directly on my page.
