@@ -25,7 +25,7 @@ class AnalyticsController extends Controller
         //print_r($browserData);
 
 
-        return view('analytics', ['browser' => $browserData]);
+        return view('analytics', ['browser' => $browserData, 'analytics' => $analyticsData]);
 
 
     }
